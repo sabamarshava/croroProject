@@ -1,0 +1,3 @@
+<h2>Users</h2>
+<input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (input)="onSearch()" />
+<app-table [columns]="columns" [data]="filteredUsers" (viewPosts)="viewPosts($event)" (viewTodos)="viewTodos($event)"></app-table>

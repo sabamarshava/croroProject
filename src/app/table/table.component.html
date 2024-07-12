@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th *ngFor="let column of columns">{{ column }}</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td *ngFor="let column of columns">{{ getNestedProperty(row, column) }}</td>
+        <td>
+          <button class="button-posts" (click)="viewPostsHandler(row.id)" *ngIf="columns.includes('name')">Posts</button>
+          <button (click)="viewTodosHandler(row.id)" *ngIf="columns.includes('name')">Todos</button>
+          <button (click)="viewDetailsHandler(row.id)" *ngIf="columns.includes('userId')">Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

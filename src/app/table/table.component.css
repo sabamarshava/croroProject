@@ -1,0 +1,29 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .button-posts {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .button-posts:hover {
+    transform: scale(1.1);
+    background-color: #00a832;
+  }
+  
